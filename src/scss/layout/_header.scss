@@ -1,0 +1,36 @@
+.inicio{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../build/img/front-view-black-luxury-sedan-road.jpg"); //se añade degradado oscuro a la imagen 
+}
+
+.header{
+    background-color: $grisOscuro;
+    padding: 1rem 0 3rem 0;
+
+    &.inicio{
+        background-position: center center; //para que no se repita
+        background-size: cover; //para que tome todo el espacio disponible
+        @include tablet {        
+            min-height: 700px;
+        }
+        .contenido-header{
+            @include tablet{ //para que la altura de la imagen se vea mas grande y esta dentro del selector de &inicio para que solo aplique al index y no a las demas paginas 
+                min-height: 70rem;
+            }
+        }
+    }
+}
+
+.contenido-header{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1{
+        text-align: left;
+        color: $blanco;
+        line-height: 2;
+        max-width: 60rem;
+        font-weight: $bold;
+    }
+}
+

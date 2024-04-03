@@ -1,0 +1,37 @@
+.barra{
+    .logotipo{
+        color: $blanco;
+        .span{
+            font-weight: $bold;
+        }
+    }
+    display:flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion{
+    @include tablet {
+        display: flex;
+        align-items: center;
+    }
+    a{
+        color: $blanco;
+        text-decoration: none;
+        font-size: 1.8rem;
+        display: block; //para que se vean de arriba hacia abajo pero hay que ajustarlo con un mixing porque esto solo debe aplicar en moviles
+        text-align: center;
+
+        @include tablet {
+            margin-right: 2rem;
+
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}

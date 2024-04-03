@@ -1,0 +1,8 @@
+.boton-amarillo{
+    @include boton ($amarillo, flex);
+    justify-content: center;
+}
+
+.boton-verde{
+    @include boton ($verde, block);
+}
