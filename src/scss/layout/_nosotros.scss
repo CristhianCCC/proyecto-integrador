@@ -1,0 +1,17 @@
+@include tablet{
+    .nosotros{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+.nosotros-texto{
+    h2{
+        font-weight: $bold;
+    }
+    p{
+        line-height: 1.5;
+    }
+}
+
